@@ -24,5 +24,5 @@ jobs:
       env:
         REPO: git@github.com:JySa65/test_github_actions.git
         BRANCH: prod
-        FOLDER: .
+        FOLDER: ../test_github_actions
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
