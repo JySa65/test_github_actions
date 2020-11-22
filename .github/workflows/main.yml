@@ -26,4 +26,3 @@ jobs:
         BRANCH: prod
         FOLDER: .
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-        # KNOWN_HOSTS_FILE: resources/known_hosts # Path relative to the root of the repository
