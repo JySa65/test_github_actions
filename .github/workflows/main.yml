@@ -19,11 +19,11 @@ jobs:
         npm install
         npm run build
 
-    # - name: Deploy
-    #   uses: s0/git-publish-subdir-action@develop
-    #   env:
-    #     REPO: git@mydomain.com:path/to/repo.git
-    #     BRANCH: artifacts
-    #     FOLDER: dist
-    #     SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-    #     KNOWN_HOSTS_FILE: resources/known_hosts # Path relative to the root of the repository
+    - name: Deploy
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: git@github.com:JySa65/test_github_actions.git
+        BRANCH: prod
+        FOLDER: dist
+        # SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+        # KNOWN_HOSTS_FILE: resources/known_hosts # Path relative to the root of the repository
