@@ -25,5 +25,5 @@ jobs:
         REPO: git@github.com:JySa65/test_github_actions.git
         BRANCH: prod
         FOLDER: dist
-        # SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
         # KNOWN_HOSTS_FILE: resources/known_hosts # Path relative to the root of the repository
